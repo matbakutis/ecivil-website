@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import AnimatedWrapper from "./AnimatedWrapper";
+import AnimatedWrapper from "./AnimatedWrapper.js";
 import "./Splash.css";
 
 class SplashComponent extends Component {
 	render() {
 		return (
 			<div className="page">
-				<p>what</p>
+				<p>Splash</p>
 			</div>
 		);
 	}
