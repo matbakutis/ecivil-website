@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import "./Main.css";
-import Home from './Home.js';
-import Projects from './Projects.js';
-import About from './About.js';
-import Services from './Services.js';
-import Contact from './Contact.js';
+import Home from "./Home.js";
+import Projects from "./Projects.js";
+import About from "./About.js";
+import Services from "./Services.js";
+import Contact from "./Contact.js";
 
 
 const firstChild = props => {
@@ -31,42 +31,42 @@ class Main extends Component {
 					exact
 					path="/morris"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Home {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Home {...rest} />}
+						</TransitionGroup>
+					)}/>
 				<Route
 					exact
 					path="/morris/projects"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Projects {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Projects {...rest} />}
+						</TransitionGroup>
+					)}/>
 				<Route
 					exact
 					path="/morris/about"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <About {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <About {...rest} />}
+						</TransitionGroup>
+					)}/>
 				<Route
 					exact
 					path="/morris/services"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Services {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Services {...rest} />}
+						</TransitionGroup>
+					)}/>
 				<Route
 					exact
 					path="/morris/contact"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Contact {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Contact {...rest} />}
+						</TransitionGroup>
+					)}/>
 			</div>
 		);
 	}

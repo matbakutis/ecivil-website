@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import AnimatedWrapper from "./AnimatedWrapper";
 import "./About.css";
 
@@ -10,7 +10,7 @@ class AboutComponent extends Component {
 					<h1>About</h1>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 

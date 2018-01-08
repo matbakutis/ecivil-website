@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import "./App.css";
 import Splash from "./Splash.js";
-import Main from './Main.js';
+import Main from "./Main.js";
 
 
 const firstChild = props => {
@@ -19,17 +19,17 @@ class App extends Component {
 					exact
 					path="/"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Splash {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Splash {...rest} />}
+						</TransitionGroup>
+					)}/>
 				<Route
 					path="/morris"
 					children={({ match, ...rest }) => (
-					<TransitionGroup component={firstChild}>
-						{match && <Main {...rest} />}
-					</TransitionGroup>
-				)}/>
+						<TransitionGroup component={firstChild}>
+							{match && <Main {...rest} />}
+						</TransitionGroup>
+					)}/>
 			</div>
 		);
 	}

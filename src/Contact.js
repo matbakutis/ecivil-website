@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import AnimatedWrapper from "./AnimatedWrapper";
-import './Contact.css';
+import "./Contact.css";
 
 
 class ContactComponent extends Component {
@@ -11,7 +11,7 @@ class ContactComponent extends Component {
 					<h1>Contact</h1>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 
