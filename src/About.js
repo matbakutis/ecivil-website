@@ -7,7 +7,7 @@ class AboutComponent extends Component {
 		return (
 			<div className="page">
 				<div className="title">
-					<h1>About</h1>
+					<h1>About Us</h1>
 				</div>
 			</div>
 		);

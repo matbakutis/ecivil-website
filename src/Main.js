@@ -3,10 +3,11 @@ import { Route, Link } from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import "./Main.css";
 import Home from "./Home.js";
-import Projects from "./Projects.js";
+import Careers from "./Careers.js";
 import About from "./About.js";
 import Services from "./Services.js";
 import Contact from "./Contact.js";
+import News from "./News.js";
 
 
 const firstChild = props => {
@@ -19,12 +20,13 @@ class Main extends Component {
 		return (
 			<div className="App">
 				<nav>
-					<div className="linkHover">
-						<Link to="/morris" className="aLink">Home</Link>
-						<Link to="/morris/projects" className="aLink dropLink">Projects</Link>
-						<Link to="/morris/about" className="aLink">About</Link>
-						<Link to="/morris/services" className="aLink dropLink">Services</Link>
-						<Link to="/morris/contact" className="aLink">Contact</Link>
+					<div className="links">
+						<Link to="/morris" className="aLink"><img src="/morrisLogo.png" id="logo"/></Link>
+						<Link to="/morris/careers" className="aLink hoverEffect">Careers</Link>
+						<Link to="/morris/about" className="aLink hoverEffect">About</Link>
+						<Link to="/morris/services" className="aLink hoverEffect">Services</Link>
+						<Link to="/morris/contact" className="aLink hoverEffect">Contact</Link>
+						<Link to="/morris/news" className="aLink hoverEffect">News</Link>
 					</div>
 				</nav>
 				<Route
@@ -37,10 +39,10 @@ class Main extends Component {
 					)}/>
 				<Route
 					exact
-					path="/morris/projects"
+					path="/morris/careers"
 					children={({ match, ...rest }) => (
 						<TransitionGroup component={firstChild}>
-							{match && <Projects {...rest} />}
+							{match && <Careers {...rest} />}
 						</TransitionGroup>
 					)}/>
 				<Route
@@ -65,6 +67,14 @@ class Main extends Component {
 					children={({ match, ...rest }) => (
 						<TransitionGroup component={firstChild}>
 							{match && <Contact {...rest} />}
+						</TransitionGroup>
+					)}/>
+				<Route
+					exact
+					path="/morris/news"
+					children={({ match, ...rest }) => (
+						<TransitionGroup component={firstChild}>
+							{match && <News {...rest} />}
 						</TransitionGroup>
 					)}/>
 			</div>
