@@ -1,0 +1,57 @@
+#aboutParallax {
+    background-image: url("parallax.jpg");
+
+    height: 40vw; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#aboutRightTriangle {
+    width: 0;
+	height: 0;
+	border-bottom: 40vw solid rgb(14, 0, 200);
+    border-left: 40vw solid transparent;
+    float: right;
+}
+
+#aboutRightTriangleSmall {
+    width: 0;
+	height: 0;
+	border-bottom: 30vw solid rgb(10, 0, 150);
+    border-left: 30vw solid transparent;
+    float: right;
+}
+
+#aboutRightTriangleSmallest {
+    width: 0;
+	height: 0;
+	border-bottom: 20vw solid rgb(7, 0, 100);
+    border-left: 20vw solid transparent;
+    float: right;
+}
+
+#aboutLeftTriangle {
+    width: 0;
+	height: 0;
+	border-top: 20vw solid rgb(7, 0, 100);
+    border-right: 20vw solid transparent;
+    float: left;
+}
+
+.aboutParallaxTitle {
+    margin: 0;
+    padding: 10vw;
+    padding-left: 30vw;
+    color: rgb(7, 0, 100);
+    font-family: 'Muli', sans-serif;
+    font-size: 8vw;
+}
+
+.aboutBreaker {
+    width: 100%;
+    height: 40vw;
+    background-color: rgb(14, 0, 200);
+}

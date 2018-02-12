@@ -19,14 +19,17 @@ class Main extends Component {
 	render() {
 		return (
 			<div className="App">
-				<nav>
+				<nav id="navigation">
+					<div>
+						<Link to="/morris"><img src="/morrisLogo.png" id="logo"/></Link>
+					</div>
 					<div className="links">
-						<Link to="/morris" className="aLink"><img src="/morrisLogo.png" id="logo"/></Link>
-						<Link to="/morris/careers" className="aLink hoverEffect">Careers</Link>
-						<Link to="/morris/about" className="aLink hoverEffect">About</Link>
+						<Link to="/morris" className="aLink hoverEffect">Home</Link>
 						<Link to="/morris/services" className="aLink hoverEffect">Services</Link>
-						<Link to="/morris/contact" className="aLink hoverEffect">Contact</Link>
 						<Link to="/morris/news" className="aLink hoverEffect">News</Link>
+						<Link to="/morris/about" className="aLink hoverEffect">About</Link>
+						<Link to="/morris/careers" className="aLink hoverEffect">Careers</Link>
+						<Link to="/morris/contact" className="aLink hoverEffect">Contact</Link>
 					</div>
 				</nav>
 				<Route

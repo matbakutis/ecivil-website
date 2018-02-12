@@ -1,16 +1,24 @@
-nav {
+#navigation {
     background-color: #eeeeee;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .links {
+    width: 400px;
     display: flex;
     flex-direction: row;
+    align-content: space-around;
+    margin-right: 35px;
 }
 
 .aLink {
-    margin: auto 45px;
+    margin: auto auto;
     font-family: 'Josefin Sans', sans-serif;
     color: #05158e;
+    font-size: 13px;
 }
 
 .hoverEffect {
@@ -39,5 +47,6 @@ nav {
 }
 
 #logo {
-    height: 60px;
+    height: 100px;
+    margin: 15px 30px;
 }

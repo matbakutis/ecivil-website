@@ -7,7 +7,22 @@ class AboutComponent extends Component {
 		return (
 			<div className="page">
 				<div className="title">
-					<h1>About Us</h1>
+					<div id="aboutParallax">
+						<div id="aboutLeftTriangle">
+						</div>
+						<div id="aboutRightTriangle">
+							<div id="aboutRightTriangleSmall">
+								<div id="aboutRightTriangleSmallest">
+								</div>
+							</div>
+						</div>
+						<h1 className="aboutParallaxTitle">About</h1>
+					</div>
+					<div className="aboutBreaker">
+						<img id="first-quote" src="pictures/quote2.png" alt="First Quote" /> 
+						<img id="second-quote" src="pictures/quote.png" alt="Second Quote" /> 
+						<p>Our growing Survey department performs over 3000 surveys annually in the Chicago metropolitan area.</p>
+					</div>
 				</div>
 			</div>
 		);
