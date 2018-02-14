@@ -54,4 +54,30 @@
     width: 100%;
     height: 40vw;
     background-color: rgb(14, 0, 200);
+    color: rgb(7, 0, 100);
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3vw;
+    display: table;
 }
+
+.aboutBreakerContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#quoteText {
+    display: block;
+    margin: 4px 0;
+    text-align: center;
+}
+
+.bar { 
+    border: 0; 
+    height: 3px; 
+    background-image: -webkit-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -moz-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -ms-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -o-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200)); 
+  }

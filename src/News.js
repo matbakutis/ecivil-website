@@ -8,7 +8,18 @@ class NewsComponent extends Component {
 		return (
 			<div className="page">
 				<div className="title">
-					<h1>News</h1>
+					<div id="newsParallax">
+						<div id="newsLeftTriangle">
+						</div>
+						<div id="newsRightTriangle">
+							<div id="newsRightTriangleSmall">
+								<div id="newsRightTriangleSmallest">
+								</div>
+							</div>
+						</div>
+						<h1 className="newsParallaxTitle">News</h1>
+					</div>
+					<div className="newsBreaker"></div>
 				</div>
 			</div>
 		);

@@ -1,0 +1,83 @@
+#careersParallax {
+    background-image: url("parallax.jpg");
+
+    height: 40vw; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+#careersLeftTriangle {
+    width: 0;
+	height: 0;
+	border-bottom: 40vw solid rgb(14, 0, 200);
+    border-right: 40vw solid transparent;
+    float: left;
+}
+
+#careersLeftTriangleSmall {
+    width: 0;
+	height: 0;
+	border-bottom: 30vw solid rgb(10, 0, 150);
+    border-right: 30vw solid transparent;
+    float: left;
+}
+
+#careersLeftTriangleSmallest {
+    width: 0;
+	height: 0;
+	border-bottom: 20vw solid rgb(7, 0, 100);
+    border-right: 20vw solid transparent;
+    float: left;
+}
+
+#careersRightTriangle {
+    width: 0;
+	height: 0;
+	border-top: 20vw solid rgb(7, 0, 100);
+    border-left: 20vw solid transparent;
+    float: right;
+}
+
+.careersParallaxTitle {
+    margin: 0;
+    padding: 10vw;
+    padding-left: 30vw;
+    color: rgb(7, 0, 100);
+    font-family: 'Muli', sans-serif;
+    font-size: 8vw;
+}
+
+.careersBreaker {
+    width: 100%;
+    height: 40vw;
+    background-color: rgb(14, 0, 200);
+    color: rgb(7, 0, 100);
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3vw;
+    display: table;
+}
+
+.careersBreakerContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#quoteText {
+    display: block;
+    margin: 4px 0;
+    text-align: center;
+}
+
+.bar { 
+    border: 0; 
+    height: 3px; 
+    background-image: -webkit-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -moz-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -ms-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
+    background-image: -o-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200)); 
+  }

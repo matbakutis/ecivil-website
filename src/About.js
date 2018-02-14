@@ -19,9 +19,11 @@ class AboutComponent extends Component {
 						<h1 className="aboutParallaxTitle">About</h1>
 					</div>
 					<div className="aboutBreaker">
-						<img id="first-quote" src="pictures/quote2.png" alt="First Quote" /> 
-						<img id="second-quote" src="pictures/quote.png" alt="Second Quote" /> 
-						<p>Our growing Survey department performs over 3000 surveys annually in the Chicago metropolitan area.</p>
+						<div className="aboutBreakerContent">
+							<hr className="bar" />
+							<p id="quoteText">Our growing Survey department performs over 3000 surveys annually in the Chicago metropolitan area.</p>
+							<hr className="bar" />
+						</div>
 					</div>
 				</div>
 			</div>
