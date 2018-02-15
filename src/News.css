@@ -58,6 +58,20 @@
     background-color: rgb(7, 0, 100);
 }
 
+.newsImageLeft {
+    max-width: 40%;
+    float: left;
+}
+
+.newsImageRight {
+    max-width: 40%;
+    float: right;
+}
+
+.newsArticleOuter {
+    clear: both;
+}
+
 
 
 

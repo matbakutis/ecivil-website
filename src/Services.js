@@ -8,7 +8,18 @@ class ServicesComponent extends Component {
 		return (
 			<div className="page">
 				<div className="title">
-					<h1>Services</h1>
+					<div id="servicesParallax">
+						<div id="servicesRightTriangle">
+						</div>
+						<div id="servicesLeftTriangle">
+							<div id="servicesLeftTriangleSmall">
+								<div id="servicesLeftTriangleSmallest">
+								</div>
+							</div>
+						</div>
+						<h1 className="servicesParallaxTitle">Services</h1>
+					</div>
+					<div className="servicesBreaker"></div>
 				</div>
 			</div>
 		);
