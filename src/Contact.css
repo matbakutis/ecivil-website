@@ -12,7 +12,7 @@
 #contactLeftTriangle {
     width: 0;
 	height: 0;
-	border-top: 40vw solid rgb(14, 0, 200);
+	border-top: 40vw solid rgb(240, 240, 240);
     border-right: 40vw solid transparent;
     float: left;
 }
@@ -20,7 +20,7 @@
 #contactLeftTriangleSmall {
     width: 0;
 	height: 0;
-	border-top: 30vw solid rgb(10, 0, 150);
+	border-top: 30vw solid rgb(221, 221, 221);
     border-right: 30vw solid transparent;
     float: left;
     margin-top: -40vw;
@@ -29,7 +29,7 @@
 #contactLeftTriangleSmallest {
     width: 0;
 	height: 0;
-	border-top: 20vw solid rgb(7, 0, 100);
+	border-top: 20vw solid rgb(197, 197, 197);
     border-right: 20vw solid transparent;
     float: left;
     margin-top: -30vw;
@@ -38,7 +38,7 @@
 #contactRightTriangle {
     width: 0;
 	height: 0;
-	border-bottom: 20vw solid rgb(7, 0, 100);
+	border-bottom: 20vw solid rgb(197, 197, 197);
     border-left: 20vw solid transparent;
     float: right;
     margin-top: 20vw;
@@ -48,13 +48,13 @@
     margin: 0;
     padding: 10vw;
     padding-left: 48vw;
-    color: rgb(7, 0, 100);
+    color: rgb(22, 22, 22);
     font-family: 'Muli', sans-serif;
     font-size: 8vw;
 }
 
 .contactBreaker {
     width: 100%;
-    height: 40vw;
-    background-color: rgb(7, 0, 100);
+    height: 20vw;
+    background-color: rgb(197, 197, 197);
 }

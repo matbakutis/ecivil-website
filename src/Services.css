@@ -12,7 +12,7 @@
 #servicesLeftTriangle {
     width: 0;
 	height: 0;
-	border-bottom: 40vw solid rgb(14, 0, 200);
+	border-bottom: 40vw solid rgb(240, 240, 240);
     border-right: 40vw solid transparent;
     float: left;
 }
@@ -20,7 +20,7 @@
 #servicesLeftTriangleSmall {
     width: 0;
 	height: 0;
-	border-bottom: 30vw solid rgb(10, 0, 150);
+	border-bottom: 30vw solid rgb(221, 221, 221);
     border-right: 30vw solid transparent;
     float: left;
     margin-top: 10vw;
@@ -29,7 +29,7 @@
 #servicesLeftTriangleSmallest {
     width: 0;
 	height: 0;
-	border-bottom: 20vw solid rgb(7, 0, 100);
+	border-bottom: 20vw solid rgb(197, 197, 197);
     border-right: 20vw solid transparent;
     float: left;
     margin-top: 10vw;
@@ -38,7 +38,7 @@
 #servicesRightTriangle {
     width: 0;
 	height: 0;
-	border-top: 20vw solid rgb(7, 0, 100);
+	border-top: 20vw solid rgb(197, 197, 197);
     border-left: 20vw solid transparent;
     float: right;
 }
@@ -46,14 +46,104 @@
 .servicesParallaxTitle {
     margin: 0;
     padding: 10vw;
-
-    color: rgb(7, 0, 100);
+    color: rgb(22, 22, 22);
     font-family: 'Muli', sans-serif;
     font-size: 8vw;
 }
 
 .servicesBreaker {
     width: 100%;
-    height: 40vw;
-    background-color: rgb(7, 0, 100);
+    background-color: rgb(197, 197, 197);
+    padding-bottom: 2%;
+}
+
+#choiceBarOne {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: rgb(22, 22, 22);
+}
+
+.firstSelection {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 5vw 0;
+    cursor: default
+}
+
+.firstSelection:hover {
+    border: solid black 2px;
+}
+
+.secondSelection:hover {
+    border: solid black 2px;
+}
+
+#choiceBarTwo {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(197, 197, 197);
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: rgb(22, 22, 22);
+}
+
+.secondSelection {
+    flex-basis: 33.333%;
+    text-align: center;
+    padding: 5vw 0;
+    cursor: default
+
+}
+
+.secondBarOff {
+    display: none !important;
+}
+
+.selected {
+    background-color: rgb(221, 221, 221);
+    color: rgb(22, 22, 22);
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    font-family: 'Mina', sans-serif;
+}
+
+.servicesCard {
+    flex-basis: 26%;
+    background-color: rgb(221, 221, 221);
+    margin: 3% 0;
+    color: rgb(22, 22, 22);
+    font-size: 1.5vw;
+    padding: 1%;
+    border-radius: 10% 25%;
+    cursor: pointer;
+}
+
+.cardPicture {
+    max-width: 80%;
+    border-radius: 10% 25%;
+}
+
+.servicesBreakerContent {
+    font-family: 'Mina', sans-serif;
+    margin: auto 15%;
+}
+
+.servicesBreakerTitle {
+    display: block;
+    text-align: center;
+    font-family: 'Mina', sans-serif;
+    margin: auto;
+    padding-top: 1%;
 }

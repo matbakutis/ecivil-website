@@ -24,6 +24,9 @@ class Main extends Component {
 						<Link to="/morris"><img src="/morrisLogo.png" id="logo"/></Link>
 					</div>
 					<div className="links">
+						<Link to="/morris" className="anOrderLink hoverEffect">Order Online</Link>
+					</div>
+					<div className="links">
 						<Link to="/morris" className="aLink hoverEffect">Home</Link>
 						<Link to="/morris/services" className="aLink hoverEffect">Services</Link>
 						<Link to="/morris/news" className="aLink hoverEffect">News</Link>

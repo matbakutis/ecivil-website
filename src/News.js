@@ -9,10 +9,10 @@ class NewsComponent extends Component {
 		this.state = {
 			articles: [
 				{
-					title: "Article1",
+					title: "CHLORIDE REDUCTION: WHAT YOU NEED TO KNOW",
 					description: "Number of times Google Fonts API served Muli over the last week. Muli is featured in more than 560,000 websites.",
 					image: "/pictures/example2.jpg",
-					content: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.",
+					content: "",
 					imageSide: "right",
 					expanded: false
 				},
@@ -45,7 +45,7 @@ class NewsComponent extends Component {
 	render(){
 		const articles = this.state.articles.map((article, i)=>{
 			return(
-				<div key={i} className="newsArticleOuter">
+				<div key={i} className={article.imageSide === "right" ? "newsArticleOuter color1" : "newsArticleOuter color2"}>
 					<div id={i} className="newsArticleInner" onClick={this.expandArticle}>
 						<img src={article.image} className={article.imageSide === "right" ? "newsImageRight" : "newsImageLeft"} />
 						<h2 className="articleTitle">{article.title}</h2>

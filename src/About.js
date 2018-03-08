@@ -18,13 +18,7 @@ class AboutComponent extends Component {
 						</div>
 						<h1 className="aboutParallaxTitle">About</h1>
 					</div>
-					<div className="aboutBreaker">
-						<div className="aboutBreakerContent">
-							<hr className="bar" />
-							<p id="quoteText">Our growing Survey department performs over 3000 surveys annually in the Chicago metropolitan area.</p>
-							<hr className="bar" />
-						</div>
-					</div>
+					<div className="aboutBreaker"></div>
 				</div>
 			</div>
 		);
