@@ -8,7 +8,7 @@ import About from "./About.js";
 import Services from "./Services.js";
 import Contact from "./Contact.js";
 import News from "./News.js";
-
+import Order from "./Order.js";
 
 const firstChild = props => {
 	const childrenArray = React.Children.toArray(props.children);
@@ -24,7 +24,7 @@ class Main extends Component {
 						<Link to="/morris"><img src="/morrisLogo.png" id="logo"/></Link>
 					</div>
 					<div className="links">
-						<Link to="/morris" className="anOrderLink hoverEffect">Order Online</Link>
+						<Link to="/morris/order" className="anOrderLink hoverEffect">Order Online</Link>
 					</div>
 					<div className="links">
 						<Link to="/morris" className="aLink hoverEffect">Home</Link>
@@ -81,6 +81,14 @@ class Main extends Component {
 					children={({ match, ...rest }) => (
 						<TransitionGroup component={firstChild}>
 							{match && <News {...rest} />}
+						</TransitionGroup>
+					)}/>
+					<Route
+					exact
+					path="/morris/order"
+					children={({ match, ...rest }) => (
+						<TransitionGroup component={firstChild}>
+							{match && <Order {...rest} />}
 						</TransitionGroup>
 					)}/>
 			</div>

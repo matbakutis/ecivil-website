@@ -1,6 +1,6 @@
 #servicesParallax {
-    background-image: url("parallax.jpg");
-
+    background-image: url("helmet.jpg");
+    filter: saturate(.3);
     height: 40vw; 
 
     background-attachment: fixed;

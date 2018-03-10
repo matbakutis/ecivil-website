@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import AnimatedWrapper from "./AnimatedWrapper";
 import "./News.css";
-
+import { Link } from "react-router-dom";
 
 class NewsComponent extends Component {
 	constructor(){
@@ -43,18 +43,6 @@ class NewsComponent extends Component {
 	}
 
 	render(){
-		const articles = this.state.articles.map((article, i)=>{
-			return(
-				<div key={i} className={article.imageSide === "right" ? "newsArticleOuter color1" : "newsArticleOuter color2"}>
-					<div id={i} className="newsArticleInner" onClick={this.expandArticle}>
-						<img src={article.image} className={article.imageSide === "right" ? "newsImageRight" : "newsImageLeft"} />
-						<h2 className="articleTitle">{article.title}</h2>
-						<h5 className="articleDescription" style={article.expanded ? {display: "none"} : {}}>{article.description}</h5>
-						<p className="articleContent" style={!article.expanded ? {display: "none"} : {}}>{article.content}</p>
-					</div>
-				</div>
-			);
-		});
 
 		return (
 			<div className="page">
@@ -71,8 +59,27 @@ class NewsComponent extends Component {
 						<h1 className="newsParallaxTitle">News</h1>
 					</div>
 					<div className="newsBreaker"></div>
-					{articles}
+					<a href="/chlorine.docx" target="blank" >Chlorine Article</a>
 				</div>
+				<footer>
+					<div className="footer">
+						<div>
+							<Link to="/morris"><img src="/morrisLogo.png" id="logo"/></Link>
+						</div>
+						<div className="links">
+							<Link to="/morris" className="anOrderLink hoverEffect">Order Online</Link>
+						</div>
+						<div className="footerLinks">
+							<Link to="/morris" className="aFooterLink hoverEffect">Home</Link>
+							<Link to="/morris/services" className="aFooterLink hoverEffect">Services</Link>
+							<Link to="/morris/news" className="aFooterLink hoverEffect">News</Link>
+							<Link to="/morris/about" className="aFooterLink hoverEffect">About</Link>
+							<Link to="/morris/careers" className="aFooterLink hoverEffect">Careers</Link>
+							<Link to="/morris/contact" className="aFooterLink hoverEffect">Contact</Link>
+						</div>
+					</div>
+					<div>© 2018 Morris Engineering. All rights reserved.</div>
+				</footer>
 			</div>
 		);
 	}

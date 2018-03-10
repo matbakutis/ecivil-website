@@ -1,0 +1,24 @@
+.orderContainer {
+    display: flex;
+}
+
+.order {
+    
+}
+
+.orderPicture {
+    max-width: 50%;
+}
+
+#leftPicture {
+    float: left;
+}
+
+#rightPicture {
+    float: right;
+}
+
+#floatBreaker {
+    clear: both;
+}
+

@@ -57,21 +57,11 @@
 }
 
 .careersBreakerContent {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-#quoteText {
-    display: block;
-    margin: 4px 0;
+    padding-top: 9vw;
+    margin: 0;
     text-align: center;
+    font-family: 'Mina', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: rgb(22, 22, 22);
 }
-
-.bar { 
-    border: 0; 
-    height: 3px; 
-    background-image: -webkit-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
-    background-image: -moz-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
-    background-image: -ms-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200));
-    background-image: -o-linear-gradient(left, rgb(14, 0, 200), rgb(0, 145, 89), rgb(14, 0, 200)); 
-  }

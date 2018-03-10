@@ -390,19 +390,19 @@ class ServicesComponent extends Component {
 			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 		const engineeringPSContent = this.state.engineeringPSServices.services.map((service, i)=>{
-			return(<div key={i} id={i} className="servicesCard" ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
+			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 		const engineeringResContent = this.state.engineeringResServices.services.map((service, i)=>{
-			return(<div key={i} id={i} className="servicesCard" ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
+			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 		const engineeringCIContent = this.state.engineeringCIServices.services.map((service, i)=>{
-			return(<div key={i} id={i} className="servicesCard" ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
+			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 		const constructionContent = this.state.constructionServices.services.map((service, i)=>{
-			return(<div key={i} id={i} className="servicesCard" ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
+			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 		const municipalContent = this.state.municipalServices.services.map((service, i)=>{
-			return(<div key={i} id={i} className="servicesCard" ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
+			return(<div key={i} id={i} className="servicesCard" onClick={this.setOpen} ><h2 className="cardTitle">{service.title}</h2><img className="cardPicture" src={service.picture} alt={"Card Picture " + i} /></div>)
 		});
 
 
@@ -463,6 +463,9 @@ class ServicesComponent extends Component {
 					<div className="footer">
 						<div>
 							<Link to="/morris"><img src="/morrisLogo.png" id="logo"/></Link>
+						</div>
+						<div className="links">
+							<Link to="/morris" className="anOrderLink hoverEffect">Order Online</Link>
 						</div>
 						<div className="footerLinks">
 							<Link to="/morris" className="aFooterLink hoverEffect">Home</Link>
